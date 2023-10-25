@@ -1,0 +1,287 @@
+$strongcyan: hsl(172, 67%, 45%);
+$verydarkcyan: hsl(183, 100%, 15%);
+$darkgrayishcyan: hsl(186, 14%, 43%);
+$grayishcyan: hsl(184, 14%, 56%);
+$lightgrayishcyan: hsl(185, 41%, 84%);
+$verylightgrayishcyan: hsl(189, 41%, 97%);
+$white: hsl(0, 0%, 100%);
+
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Hanken+Grotesk:wght@500;700;800&family=Merriweather:ital@1&family=Plus+Jakarta+Sans:wght@500;800&family=Roboto:wght@400;700&family=Space+Mono:wght@400;700&family=Work+Sans:wght@400;500&display=swap');
+
+body {
+    font-size: 24px;
+    font-family: 'Space Mono', sans-serif;
+    background-color:$lightgrayishcyan;
+    height: 100%;
+    #root {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .alltogether {
+        border: transparent;
+        width: 750px;
+        max-height: 500px;
+        display: flex;
+        background-color:$white;
+        border-radius: 20px;
+        padding: 30px;
+        .leftside {
+            max-width: 400px;
+            max-height: 410px;
+            padding: 15px;
+            color: $verydarkcyan;
+            font-size: 15px;
+            label {
+                padding-right: 50px;
+                padding-top: 10px;
+                padding-bottom: 5px;
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+            .billinput {
+                background-color: $verylightgrayishcyan;
+                border-radius: 10px;
+                margin-bottom: 30px;
+                border: transparent 1px solid;
+                &:hover{
+                    border: $strongcyan 1px solid;
+                    cursor: pointer;
+                }
+                img {
+                    background-color: $verylightgrayishcyan;
+                }
+                input {
+                    border: transparent;
+                    font-size: 24px;
+                    text-align: right;
+                    font-family: 'Space Mono', sans-serif;
+                    background-color: transparent;
+                    
+                }
+            }
+            .selecttip {
+                .firstrow {
+                    display: flex;
+                    margin-left: 0px;
+                }
+                    .five {
+                        color: white;
+                        background-color: $verydarkcyan;
+                        font-size: 20px;
+                        font-weight: bold;
+                        margin: 10px;
+                        margin-left: 0px;
+                        padding: 5px;
+                        padding-left: 35px;
+                        padding-right: 35px;
+                        border: transparent;
+                        border-radius: 5px;
+                        font-family: 'Space Mono', sans-serif;
+                        &:hover{
+                            background-color: $strongcyan;
+                            cursor: pointer;
+                        }
+                    }
+                    .ten {
+                        color: white;
+                        background-color: $verydarkcyan;
+                        font-size: 20px;
+                        font-weight: bold;
+                        margin: 10px;
+                        padding: 5px;
+                        padding-left: 30px;
+                        padding-right: 30px;
+                        border: transparent;
+                        border-radius: 5px;
+                        font-family: 'Space Mono', sans-serif;
+                        &:hover {
+                            background-color: $strongcyan;
+                            cursor: pointer;
+                        }
+                    }
+                    .fifteen {
+                        color: white;
+                        background-color: $verydarkcyan;
+                        font-size: 20px;
+                        font-weight: bold;
+                        margin: 10px;
+                        padding: 5px;
+                        padding-left: 30px;
+                        padding-right: 30px;
+                        border: transparent;
+                        border-radius: 5px;
+                        font-family: 'Space Mono', sans-serif;
+                        &:hover {
+                            background-color: $strongcyan;
+                            cursor: pointer;
+                        }
+                    }
+                .secondrow {
+                    display: flex;
+                    margin-left: 0px;
+                    margin-bottom: 20px;
+                }
+                    .twentyfive {
+                        color: white;
+                        background-color: $verydarkcyan;
+                        font-size: 20px;
+                        font-weight: bold;
+                        margin: 10px;
+                        margin-left: 0px;
+                        padding: 5px;
+                        padding-left: 30px;
+                        padding-right: 30px;
+                        border: transparent;
+                        border-radius: 5px;
+                        font-family: 'Space Mono', sans-serif;
+                        &:hover {
+                            background-color: $strongcyan;
+                            cursor: pointer;
+                        }
+                    }
+                    .fifty {
+                        color: white;
+                        background-color: $verydarkcyan;
+                        font-size: 20px;
+                        font-weight: bold;
+                        margin: 10px;
+                        padding: 5px;
+                        padding-left: 30px;
+                        padding-right: 30px;
+                        border: transparent;
+                        border-radius: 5px;
+                        font-family: 'Space Mono', sans-serif;
+                        &:hover {
+                            background-color: $strongcyan;
+                            cursor: pointer;
+                        }
+                    }
+                    .custom {
+                        color: $verydarkcyan;
+                        background-color: $verylightgrayishcyan;
+                        font-size: 24px;
+                        font-weight: bold;
+                        width: 90px;
+                        margin: 10px;
+                        border: transparent 1px solid;
+                        border-radius: 5px;
+                        font-family: 'Space Mono', sans-serif;
+                        &:hover{
+                            border: $strongcyan 1px solid;
+                            cursor: pointer;
+                        }
+                    }    
+            .highlighted {
+                 background-color: $strongcyan;
+            }
+            }
+            .numberofpeople {
+                .peopleinput {
+                    img {
+                        background-color: $verylightgrayishcyan;
+                    }
+                    input {
+                        border: transparent 1px solid;
+                        font-size: 24px;
+                        border-radius: 10px;
+                        margin-bottom: 20px;
+                        text-align: right;
+                        font-family: 'Space Mono', sans-serif;
+                        background-color: $verylightgrayishcyan;
+                        &:hover{
+                            border: $strongcyan 1px solid;
+                            cursor: pointer;
+                        }
+                    }
+                }    
+            }
+        }
+        .rightside {
+            width: 350px;
+            max-height: 410px;
+            padding: 15px;
+            background-color: $verydarkcyan;
+            border-radius: 10px;
+            .tipamount {
+                display: flex;
+                justify-content: space-between;
+                .tiptext {
+                    margin-left: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    h1 {
+                        color: $white;
+                        font-size: 14px;
+                        display: block;
+                        margin-top: 20px;
+                        font-weight: bold;
+                        margin-bottom: 0px;
+                    }
+                    p {
+                        color: $grayishcyan;
+                        display: block;
+                        margin: 0px;
+                        font-size: 14px;
+                        font-weight: bold;
+                    }
+                }
+                h2 {
+                    display: inline-block;
+                    margin-right: 10px;
+                }
+            }
+            .total {
+                display: inline-block;
+                margin-bottom: 35px;
+                .totaltext {
+                    display: inline-block;
+                    margin-left: 20px;
+                    h1 {
+                        color: $white;
+                        font-size: 14px;
+                        display: block;
+                        margin-top: 20px;
+                        font-weight: bold;
+                        margin-bottom: 0px;
+                    }
+                    p {
+                        color: $grayishcyan;
+                        display: block;
+                        margin: 0px;
+                        font-size: 14px;
+                        font-weight: bold;
+                    }
+                }
+                h2 {
+                    display: inline-block;
+                    margin-left: 7rem;
+                }
+            }  
+        }
+        .reset {
+            border: transparent;
+            padding-left: 90px;
+            padding-right: 90px;
+            font-size: 25px;
+            max-width: 900px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            margin-left: 3rem;
+            font-family: 'Space Mono', sans-serif;
+            background-color: $darkgrayishcyan;
+            &:hover{
+                background-color: $strongcyan;
+                cursor: pointer;
+            }
+        }
+    }
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+}

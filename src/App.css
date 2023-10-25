@@ -1,38 +1,270 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Hanken+Grotesk:wght@500;700;800&family=Merriweather:ital@1&family=Plus+Jakarta+Sans:wght@500;800&family=Roboto:wght@400;700&family=Space+Mono:wght@400;700&family=Work+Sans:wght@400;500&display=swap");
+body {
+  font-size: 24px;
+  font-family: "Space Mono", sans-serif;
+  background-color: hsl(185, 41%, 84%);
+  height: 100%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+body #root {
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-around;
+}
+body .alltogether {
+  border: transparent;
+  width: 750px;
+  max-height: 500px;
+  display: flex;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 20px;
+  padding: 30px;
+}
+body .alltogether .leftside {
+  max-width: 400px;
+  max-height: 410px;
+  padding: 15px;
+  color: hsl(183, 100%, 15%);
+  font-size: 15px;
+}
+body .alltogether .leftside label {
+  padding-right: 50px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+body .alltogether .leftside .billinput {
+  background-color: hsl(189, 41%, 97%);
+  border-radius: 10px;
+  margin-bottom: 30px;
+  border: transparent 1px solid;
+}
+body .alltogether .leftside .billinput:hover {
+  border: hsl(172, 67%, 45%) 1px solid;
+  cursor: pointer;
+}
+body .alltogether .leftside .billinput img {
+  background-color: hsl(189, 41%, 97%);
+}
+body .alltogether .leftside .billinput input {
+  border: transparent;
+  font-size: 24px;
+  text-align: right;
+  font-family: "Space Mono", sans-serif;
+  background-color: transparent;
+}
+body .alltogether .leftside .selecttip .firstrow {
+  display: flex;
+  margin-left: 0px;
+}
+body .alltogether .leftside .selecttip .five {
   color: white;
+  background-color: hsl(183, 100%, 15%);
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px;
+  margin-left: 0px;
+  padding: 5px;
+  padding-left: 35px;
+  padding-right: 35px;
+  border: transparent;
+  border-radius: 5px;
+  font-family: "Space Mono", sans-serif;
 }
-
-.App-link {
-  color: #61dafb;
+body .alltogether .leftside .selecttip .five:hover {
+  background-color: hsl(172, 67%, 45%);
+  cursor: pointer;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body .alltogether .leftside .selecttip .ten {
+  color: white;
+  background-color: hsl(183, 100%, 15%);
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px;
+  padding: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border: transparent;
+  border-radius: 5px;
+  font-family: "Space Mono", sans-serif;
 }
+body .alltogether .leftside .selecttip .ten:hover {
+  background-color: hsl(172, 67%, 45%);
+  cursor: pointer;
+}
+body .alltogether .leftside .selecttip .fifteen {
+  color: white;
+  background-color: hsl(183, 100%, 15%);
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px;
+  padding: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border: transparent;
+  border-radius: 5px;
+  font-family: "Space Mono", sans-serif;
+}
+body .alltogether .leftside .selecttip .fifteen:hover {
+  background-color: hsl(172, 67%, 45%);
+  cursor: pointer;
+}
+body .alltogether .leftside .selecttip .secondrow {
+  display: flex;
+  margin-left: 0px;
+  margin-bottom: 20px;
+}
+body .alltogether .leftside .selecttip .twentyfive {
+  color: white;
+  background-color: hsl(183, 100%, 15%);
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px;
+  margin-left: 0px;
+  padding: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border: transparent;
+  border-radius: 5px;
+  font-family: "Space Mono", sans-serif;
+}
+body .alltogether .leftside .selecttip .twentyfive:hover {
+  background-color: hsl(172, 67%, 45%);
+  cursor: pointer;
+}
+body .alltogether .leftside .selecttip .fifty {
+  color: white;
+  background-color: hsl(183, 100%, 15%);
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px;
+  padding: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border: transparent;
+  border-radius: 5px;
+  font-family: "Space Mono", sans-serif;
+}
+body .alltogether .leftside .selecttip .fifty:hover {
+  background-color: hsl(172, 67%, 45%);
+  cursor: pointer;
+}
+body .alltogether .leftside .selecttip .custom {
+  color: hsl(183, 100%, 15%);
+  background-color: hsl(189, 41%, 97%);
+  font-size: 24px;
+  font-weight: bold;
+  width: 90px;
+  margin: 10px;
+  border: transparent 1px solid;
+  border-radius: 5px;
+  font-family: "Space Mono", sans-serif;
+}
+body .alltogether .leftside .selecttip .custom:hover {
+  border: hsl(172, 67%, 45%) 1px solid;
+  cursor: pointer;
+}
+body .alltogether .leftside .selecttip .highlighted {
+  background-color: hsl(172, 67%, 45%);
+}
+body .alltogether .leftside .numberofpeople .peopleinput img {
+  background-color: hsl(189, 41%, 97%);
+}
+body .alltogether .leftside .numberofpeople .peopleinput input {
+  border: transparent 1px solid;
+  font-size: 24px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  text-align: right;
+  font-family: "Space Mono", sans-serif;
+  background-color: hsl(189, 41%, 97%);
+}
+body .alltogether .leftside .numberofpeople .peopleinput input:hover {
+  border: hsl(172, 67%, 45%) 1px solid;
+  cursor: pointer;
+}
+body .alltogether .rightside {
+  width: 350px;
+  max-height: 410px;
+  padding: 15px;
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 10px;
+}
+body .alltogether .rightside .tipamount {
+  display: flex;
+  justify-content: space-between;
+}
+body .alltogether .rightside .tipamount .tiptext {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body .alltogether .rightside .tipamount .tiptext h1 {
+  color: hsl(0, 0%, 100%);
+  font-size: 14px;
+  display: block;
+  margin-top: 20px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+body .alltogether .rightside .tipamount .tiptext p {
+  color: hsl(184, 14%, 56%);
+  display: block;
+  margin: 0px;
+  font-size: 14px;
+  font-weight: bold;
+}
+body .alltogether .rightside .tipamount h2 {
+  display: inline-block;
+  margin-right: 10px;
+}
+body .alltogether .rightside .total {
+  display: inline-block;
+  margin-bottom: 35px;
+}
+body .alltogether .rightside .total .totaltext {
+  display: inline-block;
+  margin-left: 20px;
+}
+body .alltogether .rightside .total .totaltext h1 {
+  color: hsl(0, 0%, 100%);
+  font-size: 14px;
+  display: block;
+  margin-top: 20px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+body .alltogether .rightside .total .totaltext p {
+  color: hsl(184, 14%, 56%);
+  display: block;
+  margin: 0px;
+  font-size: 14px;
+  font-weight: bold;
+}
+body .alltogether .rightside .total h2 {
+  display: inline-block;
+  margin-left: 7rem;
+}
+body .alltogether .reset {
+  border: transparent;
+  padding-left: 90px;
+  padding-right: 90px;
+  font-size: 25px;
+  max-width: 900px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-left: 3rem;
+  font-family: "Space Mono", sans-serif;
+  background-color: hsl(186, 14%, 43%);
+}
+body .alltogether .reset:hover {
+  background-color: hsl(172, 67%, 45%);
+  cursor: pointer;
+}
+body input::-webkit-outer-spin-button,
+body input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}/*# sourceMappingURL=App.css.map */
